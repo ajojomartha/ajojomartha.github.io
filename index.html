@@ -1,30 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor Ajojo Official Documents</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Ajojo | Document Portal</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    :root {
+        --primary: #4f46e5;
+        --bg1: #0f172a;
+        --bg2: #1e293b;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: system-ui, Arial, sans-serif;
+        background: linear-gradient(135deg, var(--bg1), var(--bg2));
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+        text-align: center;
+        padding: 28px 16px 10px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    header p {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 12px 14px 40px;
+    }
+
+    /* MOBILE-FIRST GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    /* TABLET */
+    @media (min-width: 600px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    /* DESKTOP */
+    @media (min-width: 900px) {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .card {
+        background: rgba(17, 24, 39, 0.85);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 14px;
+        padding: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.2s;
+        min-height: 60px;
+    }
+
+    .card:active {
+        transform: scale(0.98);
+    }
+
+    .doc-name {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .download-btn {
+        background: var(--primary);
+        color: white;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        flex-shrink: 0;
+        transition: 0.2s;
+    }
+
+    .download-btn:hover {
+        background: #3730a3;
+    }
+
+    .download-btn i {
+        font-size: 16px;
+    }
+
+    footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 12px;
+        padding: 18px;
+    }
+</style>
 </head>
+
 <body>
 
-    <h1>Here Is My Documents Always Accessable</h1>
+<header>
+    <h1>Dr. Ajojo</h1>
+    <p>Official Document Portal</p>
+</header>
 
-    <a href="./PLE_Result_Slip.pdf">PLE CERTIFICATE</a>
+<div class="container">
+    <div class="grid">
 
-    <a href="./UCE_Certificate.pdf">UCE CERTIFICATE</a>
+        <div class="card">
+            <div class="doc-name">PLE Certificate</div>
+            <a class="download-btn" href="./PLE_Result_Slip.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    <a href="./UCE_Result_Slip.pdf">UCE RESULT SLIP</a>
+        <div class="card">
+            <div class="doc-name">UCE Certificate</div>
+            <a class="download-btn" href="./UCE_Certificate.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    <a href="./UACE_Certificate.pdf">UACE CERTIFICATE</a>
+        <div class="card">
+            <div class="doc-name">UCE Result Slip</div>
+            <a class="download-btn" href="./UCE_Result_Slip.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    <a href="./UACE_Result_Slip.pdf">UACE RESULT SLIP</a>
+        <div class="card">
+            <div class="doc-name">UACE Certificate</div>
+            <a class="download-btn" href="./UACE_Certificate.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    <a href="./Med_Certificate.pdf">MED SCHOOL CERTIFICATE</a>
+        <div class="card">
+            <div class="doc-name">UACE Result Slip</div>
+            <a class="download-btn" href="./UACE_Result_Slip.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    <a href="./Med_Transcript.pdf">MED SCHOOL TRANSCRIPT CERTIFICATE</a>
+        <div class="card">
+            <div class="doc-name">Medical Certificate</div>
+            <a class="download-btn" href="./Med_Certificate.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    <a href="./AJOJO_MARTHA.pdf">ALL DOCUMENTS</a>
+        <div class="card">
+            <div class="doc-name">Medical Transcript</div>
+            <a class="download-btn" href="./Med_Transcript.pdf" download><i class="fas fa-download"></i></a>
+        </div>
 
-    
+        <div class="card">
+            <div class="doc-name">All Documents</div>
+            <a class="download-btn" href="./AJOJO_MARTHA.pdf" download><i class="fas fa-download"></i></a>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 Dr. Ajojo • Secure Portal
+</footer>
+
 </body>
 </html>
